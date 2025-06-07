@@ -1,6 +1,18 @@
 # function to perform operation
 def perform_operation(num1, num2, operation):
-    match operation:
+
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+          return num1 * num2
+    elif operation == 'divide' and num2 != 0:
+         return num1 / num2
+    else:
+         return "Error, check the values entered." 
+    """
+match operation:
         case 'add':
             return num1 + num2
         case 'subtract':
@@ -12,3 +24,7 @@ def perform_operation(num1, num2, operation):
         case _:
             return "Error, check the values entered." 
 
+
+
+    """
+    
