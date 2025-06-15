@@ -7,6 +7,9 @@ class Book:
     def check_out(self):
         self._is_checked_out = not self._is_checked_out
         return self._is_checked_out
+    
+    def return_book(self): 
+        self._is_checked_out = False
 
     def __str__(self):
         return f"{self.title} by {self.author}"
